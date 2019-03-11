@@ -1,0 +1,34 @@
+<span id="green">kathleen@cram:~$</span> ls<!-- laglaglaglaglaglaglaglag --><br>
+<span id='blue'>projects/</span><span id='white'>aboutMe.txt</span><span id='blue'>notes/</span><br>
+<span id="green">kathleen@cram:~$</span> cat <!-- laglaglaglaglaglaglaglag -->aboutMe.txt<br/>
+
+<pre> 
+ __     __     ______     __         ______     ______     __    __     ______    
+/\ \  _ \ \   /\  ___\   /\ \       /\  ___\   /\  __ \   /\ "-./  \   /\  ___\   
+\ \ \/ ".\ \  \ \  __\   \ \ \____  \ \ \____  \ \ \/\ \  \ \ \-./\ \  \ \  __\   
+ \ \__/".~\_\  \ \_____\  \ \_____\  \ \_____\  \ \_____\  \ \_\ \ \_\  \ \_____\ 
+  \/_/   \/_/   \/_____/   \/_____/   \/_____/   \/_____/   \/_/  \/_/   \/_____/ 
+                                                                                  
+</pre>
+
+Hi, I'm Kathleen Cram. I am 20 years old and from Southern Utah.<br>
+I earned my 4 year Computer Information Technology degree from Dixie State University with an emphasis in Web Design and Development and a minor in Computer Science. <!-- laglaglaglaglaglaglaglaglag -->
+I love to read, listen to music, and travel.
+<br>
+
+I am interested in full stack development, and especially enjoy writing in VueJS, ExpressJS, Python, C++, Laravel, and React Native. <!-- laglaglaglaglaglaglaglaglag --><br>
+*Check out my <a target="_blank" href="https://github.com/d00297334">GitHub</a> 
+*Connect with me on <a target="_blank" href='https://www.linkedin.com/in/kathleen-cram/'>LinkedIn</a>
+
+<span id="green">kathleen@cram:~$</span> cd projects/<!-- laglaglaglaglaglaglaglag --><br>
+<span id="green">kathleen@cram:~/projects$</span> ls<!-- laglaglaglaglaglaglaglag -->
+
+<span class='teal'><a target="_blank" href='https://github.com/d00297334/cs3200_fortuneTeller'>Fortune Teller Website/</a></span>
+<span class='teal'><a target="_blank" href='http://flightleads.herokuapp.com/'>Flightleads CRM/</a></span>
+<span class='teal'><a target="_blank" href='https://github.com/d00297334/cats_mongodb/'>Cat World/</a></span>
+<span class='teal'><a target="_blank" href='https://github.com/d00297334/deploy/'>Pet Web App/</a></span>
+<span class='teal'><a target="_blank" href='http://d00297334.altervista.org/okeydokey/index.php/'>Okey Dokey Website/</a></span>
+<br>
+<!-- slightdelayhere--> Feel free to send me an email at<!-- longlonglongcomment --> <span id='green'>kathleencram11@gmail.com</span>
+
+Cheers!

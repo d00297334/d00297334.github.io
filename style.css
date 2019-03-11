@@ -1,125 +1,68 @@
-/* 
-font-family: 'Francois One', sans-serif;
-font-family: 'Chango', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Julius Sans One', sans-serif;
-*/
-
 body {
-    background-color:#acc4e5;
-    font-family:sans-serif;
-    font-family: 'Francois One', sans-serif;
-    
+	background-color: #000
 }
 
-ul {
-    list-style-type:none;
-    font-size:1em;
-    padding:15px;
+#app {
+	font-family: courier, monospace;
+	color: #fff;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	font-size:14px;
 }
 
-ul li {
-    background-color: white;
-    padding:10px;
-    margin:15px;
-    color:black;
+
+
+
+a {
+	color: #0bc;
+	text-decoration: none;
 }
 
-#hiddenTitle {
-    text-align:center;
-    margin-top:0px;
+#white {
+	color: #fff;
+	font-size: 14px;
+	padding-right:30px;
 }
 
-.content {
-    margin: 0 auto;
-    background-color:white;
-    height:500px;
-    width:90%;
-    padding-left:50px;
+#green {
+	color: #0f0;
+}
+
+#blue {
+	color:#3b6ab5;
+	padding-right:30px;
+	font-size:14px;
+	font-weight: 900;
 
 }
 
-#title {
-    font-size:3rem;
-    font-family: 'Chango', cursive;
+.teal {
+	color:#0bc;
+	padding-right:30px;
+	font-size:14px;
+	font-weight: 900;
 }
 
-#prompt {
-    font-family: 'Francois One', sans-serif;  
-    font-size:1.5em;
+#c {
+	color: #0bc;
 }
 
-input {
-    font-size:1em;
-}
-input[type=text] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
+#b {
+	color: #ff0096;
 }
 
-#dataContainer {
-    background-color:purple;
-    cursor: pointer;
-    float:left;
+#k {
+    	animation: change 1s;
 }
 
-#dataContainer p {
-    color:white;
-    font-size:2em;
-    margin:0px;
-    padding:10px 15px;
- 
+#op{
+    	color: #888888
 }
 
-#submitQuestion {
-    background:purple;
-    color:#fff;
-    border: none;
-    margin:10px 5px;
-    padding:5px 10px;
-    font-size:1em;
-    cursor: pointer;
-    
-}
-
-.hiddenContent {
-    width:50%;
-    z-index: 5;
-    border: 2px solid purple;
-    background-color:purple;
-    position: absolute;
-    top:20px;
-    left: 25%;
-    height:600px;
-    display:none;
-    box-shadow: 5px 5px rgba(100,100,100, 0.2);
-    overflow: scroll;
-    color:white;
-}
-
-#closeButton {
-    display:flex;
-    justify-content:flex-end;
-    margin:5px;
-    padding-right:5px;
-    cursor: pointer;
-}
-
-.container{
-    width:90%;
-    margin: 0 auto;
-}
-
-#image {
-    width:50%;
-    float:right;
-}
-
-#smokeGif {
-    width:20%;
-    float:left;
-    position: absolute;
-    top:70px;
-    display:none;
+@keyframes change {
+    	0%  { color:  #0f0; }
+    	50% { color:  #0f0; }
+    	99% { color: black; }
 }

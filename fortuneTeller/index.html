@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fortune Teller</title>
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Chango|Francois+One|Julius+Sans+One|Kaushan+Script" rel="stylesheet">
+    </head>
+    <body>
+        <div class='container'>
+            <img id='image' src='fortunetelller.svg'>
+            
+        </div>
+        
+        <div class='content'>
+            <br>
+            <h1 id='title'>Fortune Teller</h1>
+            
+            
+            <span id='prompt'>Enter a question: </span><input id='userInput' required type='text'>
+            <button id='submitQuestion' type='submit'>Enter</button><br>
+            <p id='error'></p>
+            
+            <h1 id='answer'></h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+          
+            <img id='smokeGif' src='smoke.gif'>
+            <div id='dataContainer'>
+                <p>?</p>
+            </div>
+        </div>
+       
+        <div class='hiddenContent'>
+            <h1 id='closeButton'>x</h1>
+            <h1 id='hiddenTitle'></h1>
+            <ul id='pastQuestions'></ul>
+        </div>
+        <script src='main.js'></script>
+    </body>
+</html>
+<!--onfocus="this.value=''" -->
