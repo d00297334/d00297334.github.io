@@ -1,0 +1,79 @@
+Our Color Scheme:
+yellow:
+#ffc300
+
+orange:
+#ff5733
+
+red:
+#c70039
+
+maroon:
+#900c3e
+
+purple:
+#571845
+
+How to push to gitlab:
+git status (make sure you are on your personal branch)
+git add .
+git commit -m 'message about commit'
+git push
+
+How to merge with master:
+git checkout master
+git pull origin master
+git merge 'your branch name'
+git push origin master
+
+How to get changes from master:
+git checkout `yourbranch`      
+git fetch origin        
+git merge origin/master
+
+
+A
+
+4.0
+
+A-
+
+3.7
+
+B+
+
+3.3
+
+B
+
+3.0
+
+B-
+
+2.7
+
+C+
+
+2.3
+
+C
+
+2.0
+
+C-
+
+1.7
+
+D+
+
+1.3
+
+D
+
+1.0
+
+F
+
+0.0
+
+
