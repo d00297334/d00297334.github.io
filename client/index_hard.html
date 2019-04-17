@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Grades AF</title>
+    <link href='style.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Chango|Erica+One|Heebo|Lato|Montserrat|Noto+Sans|Nunito|Open+Sans|Poppins|Raleway|Roboto|Sigmar+One" rel="stylesheet">
+  </head>
+  <body>
+    <div id='app' v-cloak>
+      <div class='wrapper'>
+        <h1 class='header'>Grades AF</h1>
+        <div class= "topbutton">
+          Number:<input type='text' v-model='number'>
+          {{ number }}
+          <br>
+          Number * 2: &nbsp;&nbsp;
+          {{ numberMultiplied }}
+          <br>
+          
+
+          <button v-on:click='buttonOneClicked' class="topbutton1">Unweighted GPA</button>
+          <button v-on:click='buttonTwoClicked' class="topbutton2">Semester GPA</button>
+          <button v-on:click='buttonThreeClicked' class="topbutton3">Cumulative GPA</button>
+        
+          <p v-show='showUnweightedText'>An unweighted GPA means that your GPA is measured on a scale from 
+            0 to 4.0 regardless of how difficult your classes are. This means an A in an AP or IB course 
+            and an A in a low-level course both translate to 4.0s. You can use this GPA converter to figure 
+            out your unweighted GPA below.</p>
+          <p v-show='showSemesterText'>Semester GPA is calculated by multiplying the number of credit 
+            hours assigned to a course by the value of the grade earned in that semester.</p>
+          <p v-show='showCumulativeText'>Cumulative Grade Point Average (GPA) refers to the overall GPA, 
+            which includes dividing the number of quality points earned in all courses attempted by the 
+            total degree-credit hours in all attempted courses.</p>
+        </div>
+        <br><br>
+
+        <div class='unweightedContainer' v-show='showUnweightedContainer'>
+          <h3 class='unWeightedHeading'>Semester 1</h3>
+          <div class='center' v-for="(row, index) in rows" v-bind:key="row">
+            Name: &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='text' :v-model='makeName(index)' :placeholder="makePlaceholder(index)">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <select name="grade1" :v-model='makeGrade(index)'>
+              <option disabled selected value> -- pick one -- </option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value='B'>B</option>
+              <option value='B-'>B-</option>
+              <option value='C+'>C+</option>
+              <option value='C'>C</option>
+              <option value='C-'>C-</option>
+              <option value='D+'>D+</option>
+              <option value='D'>D</option>
+              <option value='F'>F</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <p style='display:inline-block;'>Credits:&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <input :v-model='makeCredits(index)' type='text'>
+            <img src='minus.svg' alt='remove' class='removeButton' v-on:click='removeElement(index)'>
+            <br><br>
+          </div>  
+            
+          <div class='addButtonDiv'>
+            <button v-on:click='addRow'>Add Another Class</button>
+            <button v-on:click='calculateButton'>calculate</button>
+            <span style='color:black; font-size:1.5em'>{{ gpa }}</span>
+          </div>
+        </div>
+
+        <br><br>
+          
+      </div>
+
+
+
+
+
+
+
+    <div v-show='showSemesterContainer'>
+      <h1 style='font-size:5em; text-align: center'>coming soon!</h1>
+    </div>
+
+
+
+
+
+
+
+    <div v-show='showCumulativeContainer'>
+      <div class='cumulativeContainer'>
+        <h3 class='cumulativeHeading'>Semester 1</h3>
+        <div class='center' v-for="(row, index) in rows" v-bind:key='row'>
+        Name: &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type='text' :v-model='makeName(index)' :placeholder="makePlaceholder(index)">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+        <select name="grade1" :v-model='makeGrade(index)'>
+          <option disabled selected value> -- pick one -- </option>
+          <option value="A">A</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value='B'>B</option>
+          <option value='B-'>B-</option>
+          <option value='C+'>C+</option>
+          <option value='C'>C</option>
+          <option value='C-'>C-</option>
+          <option value='D+'>D+</option>
+          <option value='D'>D</option>
+          <option value='F'>F</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <p style='display:inline-block;'>Credits:&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <input :v-model='makeCredits(index)' type='text'>
+        <img src='minus.svg' alt='remove' class='removeButton' v-on:click='removeElement(index)'>
+        <br><br>
+        </div>  
+        
+        <div class='addButtonDiv'>
+          <button v-on:click='addRow'>Add Another Class</button>
+        </div>
+        
+     </div>
+        
+        <div class='center'>
+          <button class='addSemesterButton'>Add Another Semester</button>
+        </div>
+    </div>
+        
+  <br><br>
+  </div>
+
+     
+      
+      
+  </div>
+    
+    <script src='vue.js'></script>
+    <script src='app.js'></script>
+  </body>
+</html>
